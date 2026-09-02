@@ -19,10 +19,12 @@
 ---
 include:
   # Central/left half: nice!view display + ZMK Studio (studio snippet only on central)
-  - board: nice_nano_v2
+  # Board is "nice_nano//zmk" (Hardware Model v2). Default revision is 2.0.0 = nice!nano v2.
+  - board: nice_nano//zmk
     shield: corne_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   # Peripheral/right half: nice!view display
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: corne_right nice_view_adapter nice_view
+ 
